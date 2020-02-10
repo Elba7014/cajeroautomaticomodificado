@@ -20,6 +20,13 @@ namespace cajeroautomaticomodificado
         {
             InitializeComponent();
         }
+        public bool NumeroPrimo(int num)
+        {
+            if (num % 2 == 0)
+                return false;
+            else
+                return true;
+        }
 
         private void Btnretirar_Click(object sender, EventArgs e)
         {
@@ -64,40 +71,57 @@ namespace cajeroautomaticomodificado
             num1 = double.Parse(txtentrega.Text);
             num2 = double.Parse(txttotal.Text);
             total = num1 - num2;
+           // int resultado;
+            //resultado = resultado - 1 + resultado - 2;
 
-            double cantidad = total;
-            int[] fibo = new int[2];
+            //double num1, num2, total;
+            //num1 = double.Parse(txtentrega.Text);
+            //num2 = double.Parse(txttotal.Text);
+            //total = num1 - num2;
+            //string sucesion = "Sucesion:  \n";
+            //double respuesta = double.Parse(sucesion);
+            //double cantidad = total;
+            //int[] fibo = new int[2];
             //definimos la variable de dos elementos
-            string respuesta = "respuesta ";
-            fibo[0] = 0;
-            fibo[1] = 1;
-            int num = 0;
-                while (num <= cantidad) ;
+            //fibo[0] = 0;
+            //fibo[1] = 1;
+            //int num = 0;
+            //while (num <= cantidad) ;
             {
+              //  respuesta = (fibo[0]);
+               // int temp = fibo[0] + fibo[1];
+               // fibo[0] = fibo[1];
+                //fibo[1] = temp;
+               // num++;
 
-                int temp = fibo[0] + fibo[1];
-            fibo[0] = fibo[1];
-             fibo[1] = temp;
-            num++;
             }
-            lblsucesion.Text = respuesta;
+           // lblsucesion.Text = sucesion;
         }
+ 
+        
 
         private void Button2_Click(object sender, EventArgs e)
         {
             double num1, num2, total;
+            string respuesta = " Respuesta ";
             num1 = double.Parse(txtentrega.Text);
             num2 = double.Parse(txttotal.Text);
             total = num1 - num2;
-            double n;
-            n = total;
-            if (total / 2 == 0) 
-                lblprimo.Text = total + " es un numero primo ";
-             else
-                lblprimo.Text = total + " no es un numero primo";
+            respuesta = (total /= total = 1 ? " El numero es primo " : " El numero no es primo ");
+            lblprimo.Text = respuesta;
 
+            }
+
+        private void Form1_Load(object sender, EventArgs e)
+        {
+            //
         }
     }
+
+    private void Form1_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 
 

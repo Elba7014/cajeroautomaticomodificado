@@ -47,7 +47,7 @@
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Palatino Linotype", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(45, 27);
+            this.label1.Location = new System.Drawing.Point(12, 27);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(53, 21);
             this.label1.TabIndex = 0;
@@ -55,7 +55,7 @@
             // 
             // txttotal
             // 
-            this.txttotal.Location = new System.Drawing.Point(133, 24);
+            this.txttotal.Location = new System.Drawing.Point(100, 24);
             this.txttotal.Multiline = true;
             this.txttotal.Name = "txttotal";
             this.txttotal.Size = new System.Drawing.Size(140, 34);
@@ -63,7 +63,7 @@
             // 
             // txtentrega
             // 
-            this.txtentrega.Location = new System.Drawing.Point(439, 24);
+            this.txtentrega.Location = new System.Drawing.Point(365, 27);
             this.txtentrega.Multiline = true;
             this.txtentrega.Name = "txtentrega";
             this.txtentrega.Size = new System.Drawing.Size(140, 34);
@@ -73,7 +73,7 @@
             // 
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Palatino Linotype", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(351, 24);
+            this.label2.Location = new System.Drawing.Point(277, 27);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(69, 21);
             this.label2.TabIndex = 2;
@@ -192,6 +192,7 @@
             this.Controls.Add(this.label1);
             this.Name = "Form1";
             this.Text = "Form1";
+            this.Load += new System.EventHandler(this.Form1_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 
